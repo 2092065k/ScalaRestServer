@@ -1,6 +1,7 @@
 *.class
 *.log
 
+# sbt files
 cache
 .history
 .lib/
@@ -10,4 +11,9 @@ lib_managed/
 src_managed/
 project/boot/
 project/plugins/project/
+
+# IDE files
+.scala_dependencies
+.idea
+.idea_modules
 

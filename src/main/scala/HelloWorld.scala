@@ -9,7 +9,7 @@ object HelloWorld extends App with SimpleRoutingApp {
     implicit val actorSystem = ActorSystem()
     implicit val timeout = Timeout(1.second)
 
-    startServer(interface = "localhost", port = 8080) {
+    startServer(interface = "0.0.0.0", port = 8080) {
         get {
             path("") {
                 complete {
